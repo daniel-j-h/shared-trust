@@ -18,7 +18,7 @@ def encode(args):
     keys = [nacl.utils.random(nacl.secret.SecretBox.KEY_SIZE) for _ in range(args.n)]
     boxes = [nacl.secret.SecretBox(keys[i]) for i in range(args.n)]
 
-    perms = itertools.permutations(range(args.n), args.t)
+    perms = itertools.combinations(range(args.n), args.t)
 
     for perm in perms:
         secret = args.secret.encode("utf-8")

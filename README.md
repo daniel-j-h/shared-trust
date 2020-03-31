@@ -45,14 +45,13 @@ Note:
 ## Real Talk
 
 This is a cute prototype but I don't recommend using it for anything serious.
-We simply generate n keys and generate all encrypted and signed permutations for these n keys; this will not scale (without tricks like hierarchical shares) for larger settings.
+We simply generate n keys and generate all encrypted and signed combinations for these n keys; this will not scale (without tricks like hierarchical shares) for larger settings.
 
 
 ## More
 
 - https://en.wikipedia.org/wiki/Secret_sharing
 - https://en.wikipedia.org/wiki/Erasure_code
-- https://en.wikipedia.org/wiki/Permutation
 - https://en.wikipedia.org/wiki/Salsa20
 - https://en.wikipedia.org/wiki/Poly1305
 
